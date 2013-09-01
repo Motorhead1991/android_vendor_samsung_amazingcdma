@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing_cdma/proprietary/wifi/librasdioif.ko:system/lib/modules/librasdioif.ko \
     vendor/samsung/amazing_cdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin \
     vendor/samsung/amazing_cdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/bdata.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin \
-/hw2.1.1/device.bin \
     vendor/samsung/amazing_cdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-3.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin \
     vendor/samsung/amazing_cdma/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/amazing_cdma/proprietary/bin/wlandutservice:system/bin/wlandutservice
