@@ -102,4 +102,3 @@ PRODUCT_COPY_FILES += \
 ## Sensor
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing_cdma/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/amazing_cdma/proprietary/lib/libacc.so:system/lib/libacc.so
