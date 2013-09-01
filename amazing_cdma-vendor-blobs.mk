@@ -94,8 +94,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing_cdma/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/samsung/amazing_cdma/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/samsung/amazing_cdma/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    vendor/samsung/amazing_cdma/proprietaryetc/firmware/yamato_pfp.fw:systemetc/firmware/yamato_pfp.fw \
-    vendor/samsung/amazing_cdma/proprietaryetc/firmware/yamato_pm4.fw:systemetc/firmware/yamato_pm4.fw \
+    vendor/samsung/amazing_cdma/proprietary/etc/firmware/yamato_pfp.fw:systemetc/firmware/yamato_pfp.fw \
+    vendor/samsung/amazing_cdma/proprietary/etc/firmware/yamato_pm4.fw:systemetc/firmware/yamato_pm4.fw \
     vendor/samsung/amazing_cdma/proprietary/lib/libgsl.so:system/lib/libgsl.so \
     vendor/samsung/amazing_cdma/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg 
 
