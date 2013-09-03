@@ -81,13 +81,12 @@ PRODUCT_COPY_FILES += \
 
 ##GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing_cdma/proprietary/lib/hw/gps.msm7627a.so:system/lib/hw/gps.msm7627a.so \
+    vendor/samsung/amazing_cdma/proprietary/lib/hw/gps.msm7627a.so:system/lib/hw/gps.msm7x27a.so \
 
 ## Light
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing_cdma/proprietary/lib/hw/lights.msm7627a.so:system/lib/hw/lights.msm7627a.so \
+    vendor/samsung/amazing_cdma/proprietary/lib/hw/lights.msm7627a.so:system/lib/hw/lights.msm7x27a.so \
 
-	
 ## 3D
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing_cdma/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
