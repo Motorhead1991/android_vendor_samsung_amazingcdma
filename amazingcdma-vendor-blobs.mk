@@ -18,9 +18,39 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazingcdma/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/amazingcdma/proprietary/lib/libsec-ril-cdma.so:system/lib/libsec-ril-cdma.so \
     vendor/samsung/amazingcdma/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/amazingcdma/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/samsung/amazingcdma/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/samsung/amazingcdma/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/samsung/amazingcdma/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/amazingcdma/proprietary/bin/rild:system/bin/rild
+    vendor/samsung/amazingcdma/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/amazingcdma/proprietary/bin/port-bridge:system/bin/port-bridge \
+    vendor/samsung/amazingcdma/proprietary/bin/rmt_storage:system/bin/rmt_storage
 
+#Binaries
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazingcdma/proprietary/bin/cnd:system/bin/cnd \
+    vendor/samsung/amazingcdma/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    vendor/samsung/amazingcdma/proprietary/bin/drmserver:system/bin/drmserver \
+    vendor/samsung/amazingcdma/proprietary/bin/fmconfig:system/bin/fmconfig \
+    vendor/samsung/amazingcdma/proprietary/bin/hostapd_cli:system/bin/hostapd_cli \
+    vendor/samsung/amazingcdma/proprietary/bin/usbhub:system/bin/usbhub \
+    vendor/samsung/amazingcdma/proprietary/bin/usbhub_init:system/bin/usbhub_init \
+
+# Qcom crap
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazingcdma/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.composition_type.sh:system/etc/init.qcom.composition_type.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
+    vendor/samsung/amazingcdma/proprietary/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
+
+# Audio
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazingcdma/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
+    vendor/samsung/amazingcdma/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so
 
 ## OMX proprietaries
 PRODUCT_COPY_FILES += \
@@ -52,36 +82,20 @@ PRODUCT_COPY_FILES += \
 
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
+    vendor/samsung/amazingcdma/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
+    vendor/samsung/amazingcdma/proprietary/lib/hw/camera.msm7627a.so:system/lib/hw/camera.msm7x27a.so \
     vendor/samsung/amazingcdma/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/amazingcdma/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/amazingcdma/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/samsung/amazingcdma/proprietary/lib/libjpeg.so:system/lib/libjpeg.so \
-    vendor/samsung/amazingcdma/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
-    vendor/samsung/amazingcdma/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so
+    vendor/samsung/amazingcdma/proprietary/lib/libgemini.so:system/lib/libgemini.so
 
 ## Atheros AR6003 firmware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazingcdma/proprietary/wifi/ath.ko:system/lib/modules/ath.ko \
-    vendor/samsung/amazingcdma/proprietary/wifi/ath6kl_sdio.ko:system/lib/modules/ath6kl_sdio.ko \
-    vendor/samsung/amazingcdma/proprietary/wifi/cfg80211.ko:system/lib/modules/cfg80211.ko \
-    vendor/samsung/amazingcdma/proprietary/wifi/librasdioif.ko:system/lib/modules/librasdioif.ko \
+    vendor/samsung/amazingcdma/proprietary/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/amazingcdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin \
     vendor/samsung/amazingcdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/bdata.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin \
     vendor/samsung/amazingcdma/proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-3.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin \
-    vendor/samsung/amazingcdma/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/amazingcdma/proprietary/bin/wlandutservice:system/bin/wlandutservice
-
-## Bluetooth
-# PRODUCT_COPY_FILES += \
-#    vendor/samsung/amazingcdma/proprietary/bin/BCM2049C0_003.001.031.0088.0094.hcd:systembin/BCM2049C0_003.001.031.0088.0094.hcd \
-	
-## Audio
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazingcdma/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so 
-
-##GPS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazingcdma/proprietary/lib/hw/gps.msm7627a.so:system/lib/hw/gps.msm7x27a.so
 
 ## Light
 PRODUCT_COPY_FILES += \
@@ -93,11 +107,42 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazingcdma/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/samsung/amazingcdma/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/samsung/amazingcdma/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    vendor/samsung/amazingcdma/proprietary/etc/firmware/yamato_pfp.fw:systemetc/firmware/yamato_pfp.fw \
-    vendor/samsung/amazingcdma/proprietary/etc/firmware/yamato_pm4.fw:systemetc/firmware/yamato_pm4.fw \
+    vendor/samsung/amazingcdma/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
+    vendor/samsung/amazingcdma/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    vendor/samsung/amazingcdma/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     vendor/samsung/amazingcdma/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/samsung/amazingcdma/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg 
+    vendor/samsung/amazingcdma/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
+    vendor/samsung/amazingcdma/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
 
 ## Sensor
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazingcdma/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/amazingcdma/proprietary/bin/sensorservice:system/bin/sensorservice \
+    vendor/samsung/amazingcdma/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+    vendor/samsung/amazingcdma/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so
+
+# Low Power Mode
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazingcdma/proprietary/bin/lpmkey:system/bin/lpmkey \
+    vendor/samsung/amazingcdma/proprietary/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/amazingcdma/lpm/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/amazingcdma/lpm/battery_error.qmg:system/media/battery_error.qmg
